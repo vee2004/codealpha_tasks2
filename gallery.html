@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gallery.css">
+    
+</head>
+<body>
+    <h1>Image Gallery</h1>
+
+    <div class="gallery" onclick="openLightbox(event)">
+        
+        
+        
+            <img src="http://wallup.net/wp-content/uploads/2016/01/263693-nature-landscape-wildflowers-trees-calm-river-water-overcast-clouds.jpg"
+            alt="Image 1">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.QGXYmjug6rvLsVaK0FSUZgHaEK&pid=Api&P=0&h=180"
+            alt="Image 2">
+        <img src="http://thewowstyle.com/wp-content/uploads/2015/01/nature-images.jpg"
+            alt="Image 3">
+        <img src="http://wallup.net/wp-content/uploads/2015/12/74165-nature-HDR-river-trees-mountain-landscape.jpg"
+            alt="Image 4">
+            <img src="https://wallpaperaccess.com/full/1163637.jpg"
+            alt="Image 4">
+            <img src="https://img.freepik.com/premium-photo/hyper-realistic-nature-paintings_1060272-6597.jpg"
+            alt="Image 5">    
+            <img src="https://wallpaperaccess.com/full/1120137.jpg" alt="image 6">
+            <img src="https://wallpapercave.com/wp/wp3155700.jpg" alt="image 7">
+            <img src="https://wallpaperaccess.com/full/639799.jpg" alt="image 8">
+            <img src="https://wallpapercave.com/wp/wp4491818.jpg" alt="image 9">
+          
+    </div>
+
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <!-- Close button -->
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <!-- Main lightbox image -->
+        <img id="lightbox-img" src="" alt="lightbox image">
+
+        <!-- Thumbnails container -->
+        <div id="thumbnail-container">
+            <!-- Thumbnails will be added dynamically using JavaScript -->
+        </div>
+
+        <!-- Previous and Next buttons -->
+        <button id="prev-btn" onclick="changeImage(-1)">&lt; Prev</button>
+        <button id="next-btn" onclick="changeImage(1)">Next &gt;</button>
+    </div>
+    <script src="gallery.js"></script>
+    
+</body>
+</html>
